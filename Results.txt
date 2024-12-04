@@ -1,0 +1,2 @@
+Your password was found! It was 1423
+Your password took 0.0 seconds to crack!

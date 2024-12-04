@@ -1,4 +1,4 @@
-# Takes a string of numbers and systematically searches, finds, and outputs the password
+# Takes a string of numbers (or all characters) and systematically searches, finds, and outputs the password
 # Simulates a brute-force password cracking method
 class PasswordCracker():
 
@@ -9,11 +9,11 @@ class PasswordCracker():
         self.__CHARACTERBANK = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9"]
         # To allow the program to look for letters and symbols then replace the current characterBank with this one
         # Replace the corresponding line in the Python Final file to allow the for other passwords to be inputted
-        # self.__CHARACTERBANK = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
-        # "m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H",
-        #   "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "~", "`", "!", "@",
-        #   "#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "[", "}", "]", "|", "\\", ":", ";", "\"", "'",
-        #   "<", ",", ">", ".", "?", "/"]
+        #self.__CHARACTERBANK = ["0", "1", "2", "3", "4", "5", "6", "7", "8", "9", "a", "b", "c", "d", "e", "f", "g", "h", "i", "j", "k", "l",
+         #"m", "n", "o", "p", "q", "r", "s", "t", "u", "v", "w", "x", "y", "z", "A", "B", "C", "D", "E", "F", "G", "H",
+          # "I", "J", "K", "L", "M", "N", "O", "P", "Q", "R", "S", "T", "U", "V", "W", "X", "Y", "Z", "~", "`", "!", "@",
+           #"#", "$", "%", "^", "&", "*", "(", ")", "_", "-", "+", "=", "{", "[", "}", "]", "|", "\\", ":", ";", "\"", "'",
+           #"<", ",", ">", ".", "?", "/"]
         self.__guess = ""
         self.__count1 = 0
         self.__count2 = 0
@@ -53,9 +53,9 @@ class PasswordCracker():
           # Especially for methods testing for more characters
           #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            self.__char2Check()
+            return(self.__char2Check())
 
     # Checks if the user-inputted password is two characters long
     # Outputs the password if it is, otherwise calls for next method
@@ -78,9 +78,9 @@ class PasswordCracker():
             # Especially for methods testing for more characters
             #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            self.__char3Check()
+            return(self.__char3Check())
 
     # Checks if the user-inputted password is three characters long
     # Outputs the password if it is, otherwise calls for next method
@@ -107,9 +107,9 @@ class PasswordCracker():
           # Especially for methods testing for more characters
           #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            self.__char4Check()
+            return(self.__char4Check())
 
     # Checks if the user-inputted password is four characters long
     # Outputs the password if it is, otherwise calls for next method
@@ -139,9 +139,9 @@ class PasswordCracker():
             # Especially for methods testing for more characters
             #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            self.__char5Check()
+            return(self.__char5Check())
 
     # Checks if the user-inputted password is five characters long
     # Outputs the password if it is, otherwise calls for next method
@@ -175,9 +175,9 @@ class PasswordCracker():
             # Especially for methods testing for more characters
             #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            self.__char6Check()
+            return(self.__char6Check())
 
     # Checks if the user-inputted password is six characters long
     # Outputs the password if it is, otherwise calls for next method
@@ -214,9 +214,9 @@ class PasswordCracker():
             # Especially for methods testing for more characters
             #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            self.__char7Check()
+            return(self.__char7Check())
 
     # Checks if the user-inputted password is seven characters long
     # Outputs the password if it is, otherwise calls for next method
@@ -257,9 +257,9 @@ class PasswordCracker():
             # Especially for methods testing for more characters
             #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            self.__char8Check()
+            return(self.__char8Check())
 
     # Checks if the user-inputted password is eight characters long
     # Outputs the password if it is, otherwise calls for next method
@@ -303,9 +303,9 @@ class PasswordCracker():
             # Especially for methods testing for more characters
             #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            self.__char9Check()
+            return(self.__char9Check())
 
     # Checks if the user-inputted password is nine characters long
     # Outputs the password if it is, otherwise calls for next method
@@ -353,9 +353,9 @@ class PasswordCracker():
             # Especially for methods testing for more characters
             #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            self.__char10Check()
+            return(self.__char10Check())
 
     # Checks if the user-inputted password is two characters long
     # Outputs the password if it is, otherwise outputs error message
@@ -406,6 +406,6 @@ class PasswordCracker():
             # Especially for methods testing for more characters
             #  print("Trying " + self.__guess)
         if self.__guess == self.__password:
-            print("Your password was found! It was " + self.__guess)
+            return str("Your password was found! It was " + self.__guess)
         else:
-            print("I was unable to guess your password, sorry!")
+            return str("I was unable to guess your password, sorry!")
